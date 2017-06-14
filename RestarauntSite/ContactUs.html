@@ -1,0 +1,101 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Contact Us</title>
+        </head>
+        <body>
+             <div>
+                <h1 style="text-align:center">Pizza Time!</h1>
+                <hr>
+                <a href="Home.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <hr>
+                <br>
+            </div>
+            <div>
+                <form>
+                    <table align="center">
+                        <tr>
+                            <td align="right">
+                                <label="NameLabel" for="Name">Name: </label>
+                            </td>
+                            <td>
+                                <input id="Name" name="Name" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label="EmailLabel" for="Email">Email: </label>
+                            </td>
+                            <td>
+                                <input id="Email" name="Email" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label="PhoneLabel" for="Phone">Phone: </label>
+                            </td>
+                            <td>
+                                <input id="Phone" name="Phone" type="text"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label="ReasonLabel" for="Reason">Reason for Inquiry: </label>
+                            </td>
+                            <td>
+                                <select name="Reason">
+                                    <option value="Catering">Catering (default)</option>
+                                    <option value="PrivateParty">Private Party</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Other">Other</option>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label="AddInfoLabel" for="AddInfo">Additional Information: </label>
+                            </td>
+                            <td>
+                                <textarea id="AddInfo" name="AddInfo" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label="NewGuestLabel" for"=NewGuest">Have you been to the restaraunt?</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="NewGuest" value="No" checked/>No
+                                <input type="radio" name="NewGuest" value="Yes"/>Yes
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label="ContactDaysLabel" for="ContactDays">Best days to contact you?</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" name="ContactDays" value="M"/>M
+                                <input type="checkbox" name="ContactDays" value="T"/>T
+                                <input type="checkbox" name="ContactDays" value="W"/>W
+                                <input type="checkbox" name="ContactDays" value="Th"/>Th
+                                <input type="checkbox" name="ContactDays" value="F"/>F
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="right">
+                                <input type="submit" value="Send Request"/>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div style="text-align:center">
+                <br>
+                <hr>
+                <p>
+                    122 1/8 Street, New York City, NY, 10027<br/>
+                    1-800-555-8668
+                </p>
+            </div>
+        </body>
+    </html>
