@@ -1,26 +1,58 @@
 <DOCTYPE html>
     <html>
         <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <link href="albumStyles.css"rel="stylesheet"type="text/css"/>
             <style>
                 a {
                     color:black;
+                    text-decoration:none;
                 }
                 a:hover {
                     color:firebrick;
+                    text-decoration:underline;
+                    background-color:tan;
+                }
+                #title {
+                    font-family:"Lucidia Console", Monaco, monospace;
+                }
+                #members {
+                    font-family:"Courier New", Courier, monospace;
+                }
+                table {
+                    margin-left:auto;
+                    margin-right:auto;
+                    text-align:center;
+                    width:80%;
+                    border-collapse:collapse;
+                    table-layout:fixed;
+                    background-color:tan;
+
+                }
+                table, th, td {
+                    border: 1px solid black;
+                    font-style:italic;
+                }
             </style>
         </head>
         <body>
-            <div style="text-align:center">
-                <img src=bandImages\Streetlight_Manifesto_-_Everything_Goes_Numb.jpg></br>
-                <h1>Everything Goes Numb</h1>
+            <div class="container-fluid">
+            <p style="text-align:center"><img src="bandImages/SMEGN.jpg" class="img img-circle"></p>
+            </div>
+            <div style="text-align:center;">
+                <h1 id="title">Everything Goes Numb</h1>
                 <h2><a href="http://www.streetlightmanifesto.com">Streetlight Manifesto</a></h2>
                 <h3>August 26, 2003</h3>
             </div>
             <hr>
             <div>
-                <center><h2>Band Memebers and Producers</h2></center>
-                <ul>
+                <center><h2 id="members">Band Memebers and Producers</h2></center>
+                <h4>Band Members</h4>
+                <ul style="font-style:italic">
                     <li>Josh Ansley - Bass Guitar</li>
                     <li>Jim Conti - Alto Saxophone, Clarinet, Tenor Saxophone</li>
                     <li>Jamie Egan - Trombone, Trumpet, Tuba</li>
@@ -29,7 +61,7 @@
                     <li>Dan Ross - Alto Saxophone, Baritone Saxophone</li>
                 </ul>
                 <h4>Additional Personnel</h4>
-                <ul>
+                <ul style="font-style:italic;">
                     <li>Chris Bailey - Auxiliary Percussion</li>
                     <li>Jeff Davidson - Gang Vocals</li>
                     <li>Steve Ho - Gang Vocals</li>
@@ -41,9 +73,9 @@
                     <li>Natalia Ushak - Cover Model</li>
                 </ul>
             </div>
-            <div>
+            <div class="table-responsive">
                 <center><h2>Tracks</h2></center>
-                <table align="center" border="1" width="100%" style="border-collapse:collapse">
+                <table class="table table-striped">
                     <thead>
                         <tr bgcolor="grey">
                             <th>Track #</th>
@@ -51,7 +83,7 @@
                             <th>Track Length</th>
                         </tr>
                     </thead>
-                    <tbody align="center" valign="middle">
+                    <tbody>
                         <tr>
                             <td>1</td>
                             <td>Everything Went Numb</td>
@@ -115,6 +147,7 @@
                 </div>
                     </tbody>
                 </table>
+            </div>
             </div>
         </body>
     </html>

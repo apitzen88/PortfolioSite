@@ -1,19 +1,62 @@
 <DOCTYPE html>
     <html>
         <head>
-            <title>Home Page</title>
+              <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link href="restarauntStyles.css"rel="stylesheet"type="text/css"/>
+            <style>
+                #homeBG {
+                    background-color:rgba(235,255,185,.3);
+                }
+
+            
+            </style>
         </head>
+        <title>Home Page</title>
+        <header>
+            <h1>Pizza Time!</h1>
+            <hr>
+            <ul class="nav nav-tabs">
+            <li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            <hr>
+            </header>
         <body>
-            <div>
-                <h1 style="text-align:center">Pizza Time!</h1>
-                <hr>
-                <a href="Home.html">Home</a>
-                <a href="Menu.html">Menu</a>
-                <a href="ContactUs.html">Contact Us</a>
-                <hr>
-                <br>
-            </div>
-            <div style="text-align:center">
+            <div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+    <p style="text-align:center">New Location Opening Soon!</p>
+    </div>
+    <div class="item">
+    <p style="text-align:center">We're rolling out our seasonal menu, with special options for this season</p>
+    </div>
+    <div class="item">
+    <p style="text-align:center">The Drink of the Month is SG Special Brew</p>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+            <div id="homeBG"; style="text-align:center">
                 <img src="restarauntImages/pizza.jpg" style="width:500px"><br/>
                 <p style="width:500px; display:inline-block; border:1px; border-style:solid; padding:1px;">
                     Pizza Time! is a pizza joint that serves up pies inspired by everybodys favorite 
@@ -22,13 +65,14 @@
                      for late pizza! ($3.00 off late delivery)
                 </p>
             </div>
-            <div style="text-align:center">
-                <br>
-                <hr>
-                <p>
-                    122 1/8 Street, New York City, NY, 10027<br/>
-                    1-800-555-8668
-                </p>
             </div>
         </body>
+        <footer>
+            <br>
+            <hr>
+            <p>
+                122 1/8 Street, New York City, NY, 10027<br/>
+                1-800-555-8668
+            </p>
+        </footer>
     </html>

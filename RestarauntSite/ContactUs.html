@@ -1,23 +1,41 @@
 <DOCTYPE html>
     <html>
         <head>
-            <title>Contact Us</title>
+              <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link href="restarauntStyles.css"rel="stylesheet"type="text/css"/>
         </head>
+        <title>Contact Us</title>
+        <style>
+            table, td {
+                text-align:right;
+                margin-left:auto;
+                margin-right:auto;;
+            }
+            .req {
+                font-weight:bold;
+            }
+        </style>
+        <header>
+            <h1>Pizza Time!</h1>
+            <hr>
+            <ul class="nav nav-tabs">
+            <li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            <hr>
+        </header>
         <body>
-             <div>
-                <h1 style="text-align:center">Pizza Time!</h1>
-                <hr>
-                <a href="Home.html">Home</a>
-                <a href="Menu.html">Menu</a>
-                <a href="ContactUs.html">Contact Us</a>
-                <hr>
-                <br>
-            </div>
+            <div class="container-fluid">
             <div>
                 <form>
-                    <table align="center">
-                        <tr>
-                            <td align="right">
+                    <table>
+                        <tr class="req">
+                            <td>
                                 <label="NameLabel" for="Name">Name: </label>
                             </td>
                             <td>
@@ -25,23 +43,23 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">
+                            <td>
                                 <label="EmailLabel" for="Email">Email: </label>
                             </td>
                             <td>
                                 <input id="Email" name="Email" type="text"/>
                             </td>
                         </tr>
-                        <tr>
-                            <td align="right">
+                        <tr class="req">
+                            <td>
                                 <label="PhoneLabel" for="Phone">Phone: </label>
                             </td>
                             <td>
                                 <input id="Phone" name="Phone" type="text"/>
                             </td>
                         </tr>
-                        <tr>
-                            <td align="right">
+                        <tr class="req">
+                            <td>
                                 <label="ReasonLabel" for="Reason">Reason for Inquiry: </label>
                             </td>
                             <td>
@@ -53,15 +71,15 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" valign="top">
+                            <td>
                                 <label="AddInfoLabel" for="AddInfo">Additional Information: </label>
                             </td>
                             <td>
                                 <textarea id="AddInfo" name="AddInfo" rows="5"></textarea>
                             </td>
                         </tr>
-                        <tr>
-                            <td align="right">
+                        <tr class="req">
+                            <td>
                                 <label="NewGuestLabel" for"=NewGuest">Have you been to the restaraunt?</label>
                             </td>
                             <td>
@@ -69,8 +87,8 @@
                                 <input type="radio" name="NewGuest" value="Yes"/>Yes
                             </td>
                         </tr>
-                        <tr>
-                            <td align="right">
+                        <tr class="req">
+                            <td>
                                 <label="ContactDaysLabel" for="ContactDays">Best days to contact you?</label>
                             </td>
                             <td>
@@ -82,20 +100,21 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2" align="right">
+                            <td colspan="2">
                                 <input type="submit" value="Send Request"/>
                             </td>
                         </tr>
                     </table>
                 </form>
             </div>
-            <div style="text-align:center">
-                <br>
-                <hr>
-                <p>
-                    122 1/8 Street, New York City, NY, 10027<br/>
-                    1-800-555-8668
-                </p>
             </div>
         </body>
+        <footer>
+            <br>
+            <hr>
+            <p>
+                122 1/8 Street, New York City, NY, 10027<br/>
+                1-800-555-8668
+            </p>
+        </footer>
     </html>

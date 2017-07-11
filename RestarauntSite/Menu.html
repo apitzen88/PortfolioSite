@@ -1,22 +1,50 @@
 <Doctype html>
     <html>
         <head>
-            <title>Menu</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link href="restarauntStyles.css"rel="stylesheet"type="text/css"/>
+            <style>
+                #menu {
+                    width:80%;
+                    height:300px;
+                    text-align:center;
+                    margin-left:auto;
+                    margin-right:auto;
+                    table-layout:fixed;
+                    background-color:rgba(235,255,185,.5);
+                }
+                #beverages {
+                    width:30%;
+                    height:175px;
+                    text-align:center;
+                    margin-left:auto;
+                    margin-right:auto;
+                    table-layout:fixed;
+                    background-color:rgba(235,255,185,.5);
+                }
+            </style>
         </head>
+        <title>Menu</title>
+        <header>
+            <h1>Pizza Time!</h1>
+            <hr>
+            <ul class="nav nav-tabs">
+            <li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            <hr>
+        </header>
         <body>
+            <div class="container-fluid">
             <div>
-                <h1 style="text-align:center">Pizza Time!</h1>
-                <hr>
-                <a href="Home.html">Home</a>
-                <a href="Menu.html">Menu</a>
-                <a href="ContactUs.html">Contact Us</a>
-                <hr>
-                <br>
-            </div>
-            <div>
-                <table align="center" width="100%" cellspacing="10" cellpadding="5">
-                    <tr align="center">
-                        <td valign="top">
+                <table id="menu" class="table table-responsive">
+                    <tr>
+                        <td>
                             <h2>Cowabunga Classic</h2>
                             <p>Mozzarella cheese, red sauce,<br>
                             and pepperoni topped with<br>
@@ -24,7 +52,7 @@
                             16" - $13.00
                             </p>
                         </td>
-                        <td valign="top">
+                        <td>
                             <h2>Shell Shock</h2>
                             <p>Pork chorizo, sour cream sauce,<br>
                             and queso fresco sprinkled<br>
@@ -32,7 +60,7 @@
                             16" - $13.00
                             </p>
                         </td>
-                        <td valign="top">
+                        <td>
                             <h2>Halfshell Hero</h2>
                             <p>Cajun peanut butter sauce topped<br>
                             with fresh clams and chives<br>
@@ -40,15 +68,15 @@
                             </p>
                         </td>
                     </tr>
-                    <tr align="center">
-                        <td valign="top">
+                    <tr>
+                        <td>
                             <h2>Lean, Mean, and Green</h2>
                             <p>Asparagus and cheese baked crust<br>
                             topped with toasted mini-marshmallows<br>
                             16" - $13.00
                             </p>
                         </td>
-                        <td valign="top">
+                        <td>
                             <h2>Dirty Rat</h2>
                             <p>Mozzarella cheese, red sauce<br>
                             and pepperoni topped with<br>
@@ -67,13 +95,41 @@
                     </tr>
                 </table>
             </div>
-            <div style="text-align:center">
-                <br>
-                <hr>
-                <p>
-                    122 1/8 Street, New York City, NY, 10027<br/>
-                    1-800-555-8668
-                </p>
+            <br>
+            <div>
+                <table id="beverages" class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Beverages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Soda</td>
+                            <td>$2.50</td>
+                        </tr>
+                        <tr>
+                            <td>Beer</td>
+                            <td>$4.00</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>$1.50</td>
+                        </tr>
+                        <tr>
+                            <td>Bottled Water</td>
+                            <td>$1.25</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </body>
+        <footer>
+            <br>
+            <hr>
+            <p>
+                122 1/8 Street, New York City, NY, 10027<br/>
+                1-800-555-8668
+            </p>
+        </footer>
     </html>
